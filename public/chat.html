@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CroakApp</title>
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1><svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="35px" heigh="35px" viewBox="0 0 576 512"><path d="M528 416h-32.07l-90.32-96.34l140.6-79.03c18.38-10.25 29.75-29.62 29.75-50.62c0-21.5-11.75-41-30.5-51.25c-40.5-22.25-99.07-41.43-99.07-41.43C439.6 60.19 407.3 32 368 32s-71.77 28.25-78.52 65.5C126.7 113-.4999 250.1 .0001 417C.1251 451.9 29.13 480 64 480h304c8.875 0 16-7.125 16-16c0-26.51-21.49-48-47.1-48H284.3l23.93-32.38c24.25-36.13 10.38-88.25-33.63-106.5C250.8 267.1 223 272.4 202.4 288L169.6 312.5c-7.125 5.375-17.12 4-22.38-3.125c-5.375-7.125-4-17.12 3.125-22.38l34.75-26.12c36.87-27.62 88.37-27.62 125.1 0c10.88 8.125 45.88 39 40.88 93.13L469.6 480h90.38c8.875 0 16-7.125 16-16C576 437.5 554.5 416 528 416zM344 112c0-13.25 10.75-24 24-24s24 10.75 24 24s-10.75 24-24 24S344 125.3 344 112z" fill="white"></path></svg> <span class="chatapp__title">CroakApp</span></h1>
+      <a href="index.html" class="btn chat-btn-davi">Leave Room</a>
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room-name"></h2>
+        <h3><i class="fas fa-users"></i> Users</h3>
+        <ul id="users">
+          
+        </ul>
+      </div>
+      <div class="chat-messages">
+        
+      </div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input
+          id="msg"
+          type="text"
+          placeholder="Enter Message"
+          required
+          autocomplete="off"
+        />
+        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.10.5/qs.min.js" integrity="sha512-JduLFfiB5t9F2dYayaCCWObe/SeciiMhX2MHAKGvQ22crUA/Sb1l4elG5A7r7Bu1tP2rs1cU5lR1Irx/govVdg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
